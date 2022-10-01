@@ -1,0 +1,23 @@
+spring:
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: create-drop
+  datasource:
+    url: jdbc:mysql://localhost:3307/kufar
+    username: root
+    password: root
+    driverClassName: com.mysql.cj.jdbc.Driver
+
+server:
+  port: 8100
+
+  servlet:
+    session:
+    persistent: false
+jwt:
+  secret:
+    access: 1111
+    refresh: 11111
+
+
